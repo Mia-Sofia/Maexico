@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAKT OS</title>
+
+
+    <style>
+        h1 {
+            font-family: 'Hogfish DEMO', sans-serif;
+            color: black;
+        }
+
+        a {
+            font-family: 'Hogfish DEMO', sans-serif;
+            letter-spacing: 2.5px;
+        }
+
+        p {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h3 {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #logo_forside {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            top: 50vw;
+        }
+
+        .sectionwrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .column {
+
+            flex-grow: 1;
+            flex-basis: 200px;
+            padding: 2rem;
+            margin: 2rem;
+
+
+        }
+
+        /***************************FORSIDE******************************/
+
+        .baggrunds_billede {
+            /* baggrunds billedet*/
+            background-image: url("pics/kontakt_os.jpg");
+
+
+            /* skærm udfyldningen*/
+            height: 100vh;
+            width: 100vw;
+
+            filter: opacity(30%);
+
+
+
+            /* centrere billedet */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* positioner teksten i midten af billedet/baggrunden */
+        .baggrunds_firkant {
+
+            /* sort men gennemsigtig baggrund */
+            background-color: rgba(253, 253, 253, 0.58);
+            /* tekst farve og position*/
+            color: white;
+            text-align: center;
+            /*    rammen omkring boksen*/
+            border: 2px solid rgba(255, 255, 255, 0.16);
+            /*    position og størrelse på boksen*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 20px;
+
+
+        }
+
+
+
+        /********************  Menu Forsiden  ********************/
+
+        /* tekst farve i lille flex */
+        nav a:link {
+            color: #34453f;
+            ;
+        }
+
+        /* tekst farve i sotr flec*/
+        nav a:visited {
+            color: #34453f;
+        }
+
+        /* mous over link */
+        nav a:hover {
+            color: white;
+            background-color: #5A746B;
+            ;
+        }
+
+
+        nav a {
+            display: block;
+            font-size: 1.2rem;
+            margin: 1rem;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        @media only screen and (min-width: 725px) {
+
+            nav {
+                display: flex;
+
+            }
+
+            nav a {
+                border-left: 3px #5A746B solid;
+                border-right: 3px #5A746B solid;
+                border-bottom: 1px rgba(0, 0, 0, 0) solid;
+                border-top: 1px rgba(0, 0, 0, 0) solid;
+                text-decoration: none;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+
+
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="baggrunds_billede"></div>
+
+    <div class="baggrunds_firkant">
+
+        <div id="logo_forside">
+            <img src="pics/logo_forside.svg" alt="logo"></div>
+
+
+
+
+
+        <nav>
+            <a href="index.html">FORSIDE</a>
+            <a href="omos.html">OM MÆXICO</a>
+            <a href="menu.html">MENU KORT</a>
+        </nav>
+
+        <div class="sectionwrapper">
+
+            <div class="column">
+
+                <ul>
+                    <h3>Åbningstider</h3>
+                    <p>Man-Tors 14:00 - 22:30 <br>
+                        Fre-Søn 12:00 - 01:00 </p>
+                </ul>
+
+            </div>
+
+            <div class="column">
+
+
+                <ul>
+                    <h3>Kontakt os </h3>
+                    <p>Tlf: 0045 25 45 25 24 <br>
+                        Mail: Mexicobooking@hotmail.com <br>
+                        Adresse: Chr. IX’s Gade 6, 1111 København K </p>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

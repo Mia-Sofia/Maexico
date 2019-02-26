@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENUKORT</title>
+    <style>
+        body {
+
+            background-image: url(pics/menu_kort.png);
+            background-size: cover;
+            margin: auto;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            font-family: 'hogfish DEMO', sans-serif;
+            letter-spacing: 3px;
+            line-height: 30px;
+        }
+
+
+        h2 {
+            text-align: center;
+            font-family: 'hogfish DEMO';
+            letter-spacing: 3px;
+            line-height: 30px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+
+        a {
+            font-family: 'Hogfish DEMO', sans-serif;
+            letter-spacing: 2.5px;
+        }
+
+
+        nav {
+            text-align: center;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        .ret {
+            background-color: rgba(255, 255, 255, 0.51);
+            margin: 2vw;
+
+        }
+
+        #liste {
+            background-color: rgba(255, 255, 255, 0.51);
+            display: grid;
+            grid-template-columns: 10fr 10fr 10fr;
+        }
+
+        .valgt {
+            background-color: #d9d7d7;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        splash {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            top: 50vw;
+        }
+
+
+
+
+
+
+        /*        ************************** KNAPPER I MENUKORT**************************/
+
+
+        /* tekst farve i lille flex */
+        nav button:link {
+            color: white;
+
+        }
+
+        /* tekst farve i sotr flec*/
+        nav button:visited {
+            color: black;
+
+        }
+
+        /* mous over link */
+        nav button:hover {
+            color: white;
+            background-color: #5A746B;
+        }
+
+
+        nav button {
+            display: block;
+            font-size: 1.2rem;
+            margin: 1rem;
+            padding: 10px;
+            border-radius: 12px;
+            border: double #5A746B;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+        }
+
+        @media only screen and (min-width: 725px) {
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+
+            nav button {
+
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+
+
+
+
+            }
+
+        }
+
+
+
+        @media only screen and (max-width: 375px) {
+
+            #liste {
+
+
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /********************  Menu Forsiden  ********************/
+
+        /* tekst farve i lille flex */
+        nav a:link {
+            color: #34453f;
+            ;
+        }
+
+        /* tekst farve i sotr flec*/
+        nav a:visited {
+            color: #34453f;
+        }
+
+        /* mous over link */
+        nav a:hover {
+            color: white;
+            background-color: #5A746B;
+            ;
+        }
+
+
+        nav a {
+            display: block;
+            font-size: 1.2rem;
+            margin: 1rem;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        @media only screen and (min-width: 725px) {
+
+            nav {
+                display: flex;
+
+            }
+
+            nav a {
+                border-left: 3px #5A746B solid;
+                border-right: 3px #5A746B solid;
+                border-bottom: 1px rgba(0, 0, 0, 0) solid;
+                border-top: 1px rgba(0, 0, 0, 0) solid;
+                text-decoration: none;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+
+
+
+            }
+
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<!--__________________________________________________________HTML_____________________________________________________________-->
+
+
+
+
+
+
+<body>
+
+    <h1>HOLA MÆXICO</h1>
+
+    <splash>
+        <img src="pics/logo_forside.svg" alt="Logo">
+    </splash>
+
+    <header>
+
+        <nav id="navigeringsmenu">
+            <a href="index.html">FORSIDE</a>
+            <a href="omos.html">OM MÆXICO</a>
+            <a href="kontaktos.html">KONTAKT OS</a> </nav>
+
+
+        <nav>
+            <button class="filter" data-kategori="alle">Alle</button>
+            <button class="filter" data-kategori="forretter">Forretter</button>
+            <button class="filter" data-kategori="hovedretter">Hovedretter</button>
+            <button class="filter" data-kategori="desserter">Desserter</button>
+            <button class="filter" data-kategori="drikkevarer">Drikkevarer</button>
+
+
+        </nav>
+    </header>
+
+    <section id="liste">
+        <article class="ret"></article>
+    </section>
+
+
+
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+    <!--_______________________________________________________JAVA SCRIPT____________________________________________________-->
+
+
+
+
+    <script>
+        let retter = [];
+        let filter = "alle";
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            async function getJson() {
+                let jsonData = await fetch("maexi_tekst.json");
+                retter = await jsonData.json();
+                retter.sort((a, b) => {
+                    return a.navn.localeCompare(b.navn);
+                })
+
+                visRetter();
+            }
+
+            function visRetter() {
+                dest.innerHTML = "";
+                retter.forEach(ret => {
+                    if (filter == "alle" || filter == ret.kategori) {
+
+                        let template = `
+                            <div class="ret">
+                                <img src = "pics/madbilleder/${ret.billede}.jpg">
+                                <h2>${ret.navn}</h2>
+                                <p>Ret nr: ${ret.id}</p>
+                                <p>Pris: ${ret.pris}</p>
+                                <p>Kort beskrivelse: ${ret.kort}</p>
+                                <p>Oprindelse: ${ret.oprindelse}</p>
+
+                           </div>
+                    `;
+                        dest.insertAdjacentHTML("beforeend", template);
+                        dest.lastElementChild.addEventListener("click", () => {
+                            location.href = "mexiSigleView.html?id=" + ret.id;
+                        });
+
+                    }
+                })
+
+            }
+
+            //fuction visPersoner slut
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                filter = this.getAttribute("data-kategori");
+                document.querySelector("h1").textContent = this.textContent;
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                })
+                this.classList.add("valgt");
+                visRetter();
+            }
+
+
+
+
+            getJson();
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

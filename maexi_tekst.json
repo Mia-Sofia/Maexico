@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "kategori": "forretter",
+        "navn": "Mini Taco Palette",
+        "pris": 70,
+        "kort": "Seks små hjemmelavede tacos med forskkelig fyld",
+        "lang": "Disse seks små hjemmelavede tacos giver dig lov til at smage hvert et hjørne af mexico. du smager en lækker taco med pulledchiken, en med fritteret blomkål, oksekød og hjemmelavede chili-mayo, Tofu og vegansk goma-dressing samt den traditionelle taco med black beans og ris.",
+        "oprindelse": "Mexico",
+        "billede": "mini_taco_palette"
+},
+    {
+        "id": 2,
+        "kategori": "forretter",
+        "navn": "Guacamole og hjemmelavede chips",
+        "pris": 55,
+        "kort": "Sprøde tortillia med creamet guacamole",
+        "lang": "Knas sprøde hjemmelavede majs-chips til at dyppe i creamet hjemmerørt goacamole med grønkål, jalapenos og friske økologiske tomater.",
+        "oprindelse": "Mexico",
+        "billede": "gaucamole_chips"
+},
+    {
+        "id": 3,
+        "kategori": "forretter",
+        "navn": "Ærtesuppe",
+        "pris": 60,
+        "kort": "Creamet kold ærtesuppe",
+        "lang": "En frisk og lækker ærtesuppe der er langtidstilberedt og kogt ind på hvidvin og timian. Frisk lime på toppen og hakket koriander. ",
+        "oprindelse": "Mexico",
+        "billede": "ærtesuppe"
+},
+    {
+        "id": 4,
+        "kategori": "forretter",
+        "navn": "Majskolbe",
+        "pris": 35,
+        "kort": "Lækker grillet majskolbe",
+        "lang": "En perfekt grillet lækker majskolbe vendt i urtesmør og med hjemmerørt gomadressing",
+        "oprindelse": "Mexico",
+        "billede": "majskolbe"
+},
+    {
+        "id": 5,
+        "kategori": "hovedretter",
+        "navn": "One Pot Mexicansk Quinoagryde",
+        "pris": 99,
+        "kort": "Lækker varm mexicansk gryde med creme fraise og koriander",
+        "lang": "Mexicansk gryde med massere af grøntsager, quinoa og sorte bønner. Serveres med en kold creme fraise på toppen samt lime og korriander. Den kan bide på tungen, men holder hele kroppen dejlig varm.",
+        "oprindelse": "Mexico",
+        "billede": "one_pot_mexi"
+},
+    {
+        "id": 6,
+        "kategori": "hovedretter",
+        "navn": "Tacos med kylling og kålsalat",
+        "pris": 110,
+        "kort": "Tre lækre tacos med mexicanskfyld",
+        "lang": "Hjemmelavede tacos med saftig kylling, avocado, mexicansk kålsalat samt en hjemmerørt limedressing. Her har du sikret dig en frisk smag af Mexico der passer perfekt til en iskold Corona",
+        "oprindelse": "Mexico",
+        "billede": "taco_med_kylling"
+},
+    {
+        "id": 7,
+        "kategori": "hovedretter",
+        "navn": "Tacos med beans og ris",
+        "pris": 110,
+        "kort": "Tre traditionelle mexicanske tacos",
+        "lang": "Hjemmelavede tacos med traditonel bønne og ris fyld. Den helt klassiske mexicanske oplevelse med hjemmelavet salsa, avocado, mexicansk kålsalat samt mæxi-mayo. Her har du sikret dig en frisk smag af Mexico der passer perfekt til en iskold Corona",
+        "oprindelse": "Mexico",
+        "billede": "taco_med_beans"
+},
+    {
+        "id": 8,
+        "kategori": "hovedretter",
+        "navn": "Mæxi-Salat med sweet Potato",
+        "pris": 125,
+        "kort": "Frisk salat med alle de bedste råvarer fra mexico",
+        "lang": "Mæxi-Salat med søde kartoffler, kikærter, avocado og mexikansk kålsalat med en fisk limedressing og et twist af chilli. En creamet salat med sprød kål og lækker dressing. ",
+        "oprindelse": "Mexico",
+        "billede": "mæxi-salat"
+},
+    {
+        "id": 9,
+        "kategori": "hovedretter",
+        "navn": "Vegansk Burrito salat",
+        "pris": 125,
+        "kort": "En lækker vegansk bowl med friske råvarer",
+        "lang": "Vegansk bowl med sprødstegte chili-blomkål, sprødt grønkål, mexicanske ris, sorte bønner, frisk forårsløg samt en guacamoledressing med jalapenos.",
+        "oprindelse": "Mexico",
+        "billede": "vegansk_salat"
+},
+    {
+        "id": 10,
+        "kategori": "desserter",
+        "navn": "Hjemmelavet creamet mango is",
+        "pris": 45,
+        "kort": "En fofriskning på pind - Mango, kokos og lime.",
+        "lang": "En fofriskning på pind - Mango, kokos og lime. Mangoen giver isen en creamet konsistens, som var det en flødeis. Bare uden fløde. En lækker frisk is til at runde et stærk aftenmåltid af med. ",
+        "oprindelse": "Mexico",
+        "billede": "lime_is"
+},
+    {
+        "id": 11,
+        "kategori": "desserter",
+        "navn": "Hjemmelavet frisk fersken-is",
+        "pris": 45,
+        "kort": "En saftig hjemmelavet fersken ispind",
+        "lang": "En helt fisk lemonade-pind med ferksen saft og stykker. En sød læskende is - denne is er et must til varme sommerdage!",
+        "oprindelse": "Mexico",
+        "billede": "fersken_is"
+},
+    {
+        "id": 12,
+        "kategori": "desserter",
+        "navn": "Hjemmelavet sød og creamet is",
+        "pris": 45,
+        "kort": "Creamet, kold og sød - alt det bedste i en dessert. ",
+        "lang": "Smagen af solrig sommer. En Læskende fersken is med ferksen-saft og ferksen stykker. Creamet, kold og sød - alt det bedste i en dessert. Denne hjemmelavede lækre is på pind med smag af jordbær, banan og appelsin er perfekt til den søde tand. ",
+        "oprindelse": "Mexico",
+        "billede": "jordbær_is"
+},
+    {
+        "id": 13,
+        "kategori": "drikkevarer",
+        "navn": "Corona",
+        "pris": 35,
+        "kort": "En Iskold smag af mexico",
+        "lang": "Den mexicanske sommer øl når den er bedst, serveres is kold og med en lime i toppen.",
+        "oprindelse": "Mexico",
+        "billede": "corona"
+},
+    {
+        "id": 14,
+        "kategori": "drikkevarer",
+        "navn": "Lime-Lemonade",
+        "pris": 30,
+        "kort": "Forfiskende, sød og syrlig lemonade",
+        "lang": "Den traditionelle hjemmelavde lime-lemonade, fra den klassiske mexsikanske opskrift. tilføj 4cl tequila for +30kr",
+        "oprindelse": "Mexico",
+        "billede": "lime_lemonade"
+},
+    {
+        "id": 15,
+        "kategori": "drikkevarer",
+        "navn": "Grape-Lemonade",
+        "pris": 30,
+        "kort": "En smuk rød-orange og frisk lemonade ",
+        "lang": "Hjemmerørt læskende honning og grapefrugt lemonade med et twist af rosmarin. En lækker forfriskning.  Tilføj 4cl tequila for +30kr",
+        "oprindelse": "Mexico",
+        "billede": "grape_lemonade"
+},
+    {
+        "id": 16,
+        "kategori": "drikkevarer",
+        "navn": "Brombær-Lemonade",
+        "pris": 30,
+        "kort": "Den søde og mørke lemonade ",
+        "lang": "En sød lemonade med hjemmeplukkede brombær og frisk mynte. Serveres med en masse isterninger og mexicansk kærlighed.  Tilføj 4cl gin for +30kr",
+        "oprindelse": "Mexico",
+        "billede": "brombær_lemonade"
+},
+    {
+        "id": 17,
+        "kategori": "drikkevarer",
+        "navn": "Tequila-shot",
+        "pris": 15,
+        "kort": "Den lille skarpe, men ægte mexicanske",
+        "lang": "Traditionen tro skal men have et shot af den lille rødehat - en ægte maxicansk tequila, der gør kroppen varmer og vækker appetitten. ",
+        "oprindelse": "Mexico",
+        "billede": "tequila"
+}
+]

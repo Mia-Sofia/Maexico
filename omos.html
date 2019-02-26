@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM OS</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Hogfish DEMO', sans-serif;
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        a {
+            font-family: 'Hogfish DEMO', sans-serif;
+            letter-spacing: 2.5px;
+        }
+
+        p {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h3 {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+
+        .baggrunds_billede {
+            /* baggrunds billedet*/
+            background-image: url("pics/kontakt_os.jpg");
+
+
+            /* skærm udfyldningen*/
+            height: 100vh;
+            width: 100vw;
+
+            filter: opacity(30%);
+
+            /* centrere billedet */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        /* positioner teksten i midten af billedet/baggrunden */
+        .baggrunds_firkant {
+
+            /* sort men gennemsigtig baggrund */
+            background-color: rgba(253, 253, 253, 0.58);
+            /* tekst farve og position*/
+            color: white;
+            text-align: center;
+            /*    rammen omkring boksen*/
+            border: 2px solid rgba(255, 255, 255, 0.16);
+            /*    position og størrelse på boksen*/
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 20px;
+            margin-top: 100px;
+            height: auto;
+
+
+        }
+
+        #logo_forside {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            top: 50vw;
+        }
+
+        .sectionwrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .column {
+
+            flex-grow: 1;
+            flex-basis: 200px;
+            padding: 2rem;
+            margin: 2rem;
+
+
+        }
+
+
+        .column img {
+            width: 60%
+        }
+
+
+
+        /********************  Menu  ********************/
+
+        /* tekst farve i lille flex */
+        nav a:link {
+            color: #34453f;
+            ;
+        }
+
+        /* tekst farve i sotr flec*/
+        nav a:visited {
+            color: #34453f;
+        }
+
+        /* mous over link */
+        nav a:hover {
+            color: white;
+            background-color: #5A746B;
+            ;
+        }
+
+
+        nav a {
+            display: block;
+            font-size: 1.2rem;
+            margin: 1rem;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        @media only screen and (min-width: 725px) {
+
+            nav {
+                display: flex;
+
+            }
+
+            nav a {
+                border-left: 3px #5A746B solid;
+                border-right: 3px #5A746B solid;
+                border-bottom: 1px rgba(0, 0, 0, 0) solid;
+                border-top: 1px rgba(0, 0, 0, 0) solid;
+                text-decoration: none;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+
+
+
+            }
+
+        }
+
+
+
+        @media only screen and (max-width: 375px) {
+
+            .column img {
+                width: 80%;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="baggrunds_billede"></div>
+
+    <div class="baggrunds_firkant">
+
+        <div id="logo_forside">
+            <img src="pics/logo_forside.svg" alt="logo"></div>
+
+
+
+
+
+        <nav>
+            <a href="index.html">FORSIDE</a>
+            <a href="kontaktos.html">KONTAKT OS</a>
+            <a href="menu.html">MENU KORT</a>
+        </nav>
+
+        <div class="sectionwrapper">
+
+            <div class="column">
+
+
+                <h3>OM MÆXICO</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum aliquam aliquid ex necessitatibus amet nesciunt quam laborum cum enim labore modi natus, odit quidem aut magnam, iusto voluptates quas?</p>
+
+
+            </div>
+
+            <div class="column">
+
+
+
+                <img src="pics/omos.jpg" alt="">
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
