@@ -8,6 +8,10 @@
 
 
     <style>
+        body {
+            margin: 0;
+        }
+
         h1 {
             font-family: 'Hogfish DEMO', sans-serif;
             color: black;
@@ -20,12 +24,12 @@
 
         p {
             color: black;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         h3 {
             color: black;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         #logo_forside {
@@ -151,6 +155,44 @@
             }
 
         }
+
+        @media only screen and (max-width: 375px) {
+
+            .baggrunds_billede {
+                background-repeat: repeat-y;
+            }
+
+            .baggrunds_firkant {
+
+                /* sort men gennemsigtig baggrund */
+                background-color: rgba(253, 253, 253, 0.58);
+                /* tekst farve og position*/
+                color: white;
+                text-align: center;
+                /*    rammen omkring boksen*/
+                border: 2px solid rgba(255, 255, 255, 0.16);
+                /*    position og størrelse på boksen*/
+                /*                position: relative;*/
+                top: 45vh;
+                width: 80%;
+                padding: 2vw;
+                height: auto;
+            }
+
+            .column img {
+                width: 80%;
+            }
+
+            .sectionwrapper {
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+            }
+
+            .column {
+                margin: 0;
+                padding: 0;
+            }
     </style>
 
 </head>
@@ -163,7 +205,7 @@
     <div class="baggrunds_firkant">
 
         <div id="logo_forside">
-            <img src="pics/logo_forside.svg" alt="logo"></div>
+            <a href="index.html"><img src="pics/logo_forside.svg" alt="logo"></a></div>
 
 
 
@@ -179,24 +221,24 @@
 
             <div class="column">
 
-                <ul>
-                    <h3>Åbningstider</h3>
-                    <p>Man-Tors 14:00 - 22:30 <br>
-                        Fre-Søn 12:00 - 01:00 </p>
-                </ul>
+
+                <h3>Åbningstider</h3>
+                <p>Man-Tors 14:00 - 22:30 <br>
+                    Fre-Søn 12:00 - 01:00 </p>
+
 
             </div>
 
             <div class="column">
 
 
-                <ul>
-                    <h3>Kontakt os </h3>
-                    <p>Tlf: 0045 25 45 25 24 <br>
-                        Mail: Mexicobooking@hotmail.com <br>
-                        Adresse: Chr. IX’s Gade 6, 1111 København K </p>
 
-                </ul>
+                <h3>Kontakt os </h3>
+                <p>Tlf: 0045 25 45 25 24 <br>
+                    Mail: Mexicobooking@hotmail.com <br>
+                    Adresse: Chr. IX’s Gade 6, 1111 København K </p>
+
+
 
             </div>
 

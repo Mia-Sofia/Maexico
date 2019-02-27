@@ -31,7 +31,7 @@
         }
 
         p {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
 
@@ -83,6 +83,7 @@
 
 
 
+
         /*        ************************** KNAPPER I MENUKORT**************************/
 
 
@@ -120,56 +121,6 @@
 
         }
 
-        @media only screen and (min-width: 725px) {
-
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-
-            }
-
-
-            nav button {
-
-                padding: 10px;
-                background-color: rgba(255, 255, 255, 0);
-                color: black;
-                justify-content: space-around;
-                margin-left: auto;
-                margin-right: auto;
-
-
-
-
-            }
-
-        }
-
-
-
-        @media only screen and (max-width: 375px) {
-
-            #liste {
-
-
-                grid-template-columns: 1fr;
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         /********************  Menu Forsiden  ********************/
 
@@ -205,6 +156,7 @@
 
             nav {
                 display: flex;
+                flex-wrap: wrap;
 
             }
 
@@ -221,10 +173,28 @@
                 margin-left: auto;
                 margin-right: auto;
 
+            }
 
+            nav button {
+
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
 
             }
 
+        }
+
+
+
+        @media only screen and (max-width: 375px) {
+
+            #liste {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>

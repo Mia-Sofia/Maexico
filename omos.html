@@ -14,7 +14,7 @@
         h1 {
             font-family: 'Hogfish DEMO', sans-serif;
             color: black;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         a {
@@ -24,12 +24,12 @@
 
         p {
             color: black;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         h3 {
             color: black;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
 
@@ -94,8 +94,6 @@
             flex-basis: 200px;
             padding: 2rem;
             margin: 2rem;
-
-
         }
 
 
@@ -165,9 +163,45 @@
 
         @media only screen and (max-width: 375px) {
 
+            .baggrunds_billede {
+                background-repeat: repeat-y;
+            }
+
+            .baggrunds_firkant {
+
+                /* sort men gennemsigtig baggrund */
+                background-color: rgba(253, 253, 253, 0.58);
+                /* tekst farve og position*/
+                color: white;
+                text-align: center;
+                /*    rammen omkring boksen*/
+                border: 2px solid rgba(255, 255, 255, 0.16);
+                /*    position og størrelse på boksen*/
+                /*                position: relative;*/
+                top: 35vh;
+                width: 80%;
+                padding: 2vw;
+                height: auto;
+            }
+
             .column img {
                 width: 80%;
             }
+
+            .sectionwrapper {
+                margin: 0;
+                padding: 0;
+            }
+
+            .column {
+                margin: 0;
+                padding: 0;
+            }
+
+
+
+
+
 
 
         }

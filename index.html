@@ -20,7 +20,8 @@
         }
 
         body {
-            margin: 3px;
+            margin: 0;
+
 
         }
 
@@ -61,19 +62,22 @@
         /* tekst farve i lille flex */
         nav a:link {
             color: #34453f;
-            ;
+
         }
 
         /* tekst farve i sotr flec*/
         nav a:visited {
-            color: #34453f;
+            background-color: #34453f;
+
+
         }
 
         /* mous over link */
         nav a:hover {
-            color: white;
+
             background-color: #5A746B;
-            ;
+
+
         }
 
 
@@ -105,11 +109,17 @@
                 justify-content: space-around;
                 margin-left: auto;
                 margin-right: auto;
-
-
-
             }
 
+            #splash {
+                padding-top: 30vh;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            #splash {
+                padding-top: 30vh;
+            }
         }
     </style>
 
